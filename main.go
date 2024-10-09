@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	"log"
 	"time"
 )
 
@@ -15,5 +16,7 @@ type Recipe struct {
 
 func main() {
 	router := gin.Default()
+
+	log.Println("Starting server...")
 	router.Run(":8080")
 }
